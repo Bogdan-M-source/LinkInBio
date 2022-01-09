@@ -23,8 +23,10 @@ body { display: block; place-items: center; margin: 0;
     @media (min-width: 846px) and (max-width: 928px) { margin-bottom: 3rem; }
     @media (min-width: 900px) { width: clamp(140px, 14vw, 12rem)}
     }
-    .TitlulPaginii{ display: block; font-size: clamp(2rem, 6vw, 4rem);
+    .TitlulPaginii { display: block; font-size: clamp(2rem, 6vw, 4rem);
     line-height: 1em;}
+    .SubTitlulPaginii { display: block; margin: 0; font-weight: 100;
+    line-height: 1em; font-size: clamp(1rem, 2vw, 2rem);}
     .DescrierePrincipala { display: block; margin: 0.5em 0 1.5em; 
     @media (mind-width: 500px) { margin-bottom: 0.5em;}
     }

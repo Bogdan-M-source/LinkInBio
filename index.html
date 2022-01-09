@@ -6,33 +6,41 @@
     <title>Bogdan Muntean - Link-uri utile</title>
     <meta charset="utf-8" />
     <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, 
-        initial-scale=1.0" />
-    <meta name="description" content="Toate link-urile mele.
-        Profilurile de social media pe care sunt activ." <!--Open Graph Protocol-->
-    <meta property="og:title" content="Bogdan Muntean - Link-uri
-utile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Toate link-urile mele. 
+    Profilurile de social media pe care sunt activ." />
+    <!--Pentru comptaibilitatea cu internet explorer, este un legacy meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Open Graph Protocol-->
+    <meta property="og:title" content="Bogdan Muntean - Link-uri utile" />
     <meta property="og:site_name" content="Bogdan Muntean" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ro_RO" />
     <meta property="og:url" content="https://www.bogdanmuntean.ro/linkuri/" />
     <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
-    <!--width si heigth este optional, le poti defini sa fie
-in orice caz. Marimea standard pentru facebook este 1200 pe 628
-Cautam pe social media sizes pentru dimensiuni.-->
+    <!--
+    width si heigth este optional, le poti defini sa fie
+    in orice caz. Marimea standard pentru facebook este 1200 pe 628
+    Cautam pe social media sizes pentru dimensiuni.-->
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
     <link rel="stylesheet" href="style.css" />
+
+    <meta name="theme-color" content="#4F6DF5">
 </head>
 
-<body>
-    <div class="Container">
+<body itemscope="" itemtype="https://schema.org/ProfilePage">
+    <div class="Container" itemscope="" itemtype="https://schema.org/Person">
         <header>
-            <img class="Avatar" src="pers.jpg" width="300" height="300" alt="Imagine de profil Bogdan Muntean">
+            <img class="Avatar" src="pers.jpg" width="300" height="300" alt="Imagine de profil Bogdan Muntean"
+                itemprop="image" />
             <h1 class="TitlulPaginii">
-                <strong>Bogdan Muntean</strong>
+                <strong itemprop="name">Bogdan Muntean</strong>
             </h1>
-            <p class="DescrierePrincipala">Toate link-urile mele.
+            <h2 class="SubTitlulPaginii" itemprop="jobTitle">
+                In process of learning Web Development
+            </h2>
+            <p class="DescrierePrincipala" itemprop="description">Toate link-urile mele.
                 Profilurile de social media pe care sunt activ.
             </p>
         </header>
@@ -42,41 +50,40 @@ Cautam pe social media sizes pentru dimensiuni.-->
                     <a href="URL" class="ListaLink" title="Intra pe site-ul meu acum." target="_blank"
                         rel="noreferrer noopener">
                         <h2 class="ListaTitlu">📝 My Website</h2>
-                        <p class="ListaLink">LINK</p>
+                        <p class="ListaText" itemprop="url">LINK</p>
                     </a>
                 </li>
                 <li class="ListaItem">
-                    <a href="URL" class="ListaLink" title="Vezi profilul meu de LinkedIn." target="_blank"
-                        rel="noreferrer noopener">
+                    <a href="https://www.linkedin.com/in/bogdan-muntean-ro/" class="ListaLink"
+                        title="Vezi profilul meu de LinkedIn." target="_blank" rel="noreferrer noopener">
                         <h2 class="ListaTitlu">✔️ LinkedIn</h2>
-                        <p class="ListaLink">LINK</p>
+                        <p class="ListaText" itemprop="url">https://www.linkedin.com/in/bogdan-muntean-ro/</p>
                     </a>
                 </li>
                 <li class="ListaItem">
-                    <a href="URL" class="ListaLink" title="Vezi profilul meu de Facebook." target="_blank"
-                        rel="noreferrer noopener">
+                    <a href="https://www.facebook.com/bogdan.muntean.ro/" class="ListaLink"
+                        title="Vezi profilul meu de Facebook." target="_blank" rel="noreferrer noopener">
                         <h2 class="ListaTitlu">&#128077 Facebook</h2>
-                        <p class="ListaLink">LINK</p>
+                        <p class="ListaText" itemprop="url">https://www.facebook.com/bogdan.muntean.ro/</p>
                     </a>
                 </li>
                 <li class="ListaItem">
-                    <a href="URL" class="ListaLink" title="Vezi profilul meu de Twitter." target="_blank"
-                        rel="noreferrer noopener">
+                    <a href="https://twitter.com/BogdanMuntean_" class="ListaLink" title="Vezi profilul meu de Twitter."
+                        target="_blank" rel="noreferrer noopener">
                         <h2 class="ListaTitlu">🐦 Twitter</h2>
-                        <p class="ListaLink">LINK</p>
+                        <p class="ListaText" itemprop="url">https://twitter.com/BogdanMuntean_</p>
                     </a>
                 </li>
                 <li class="ListaItem">
-                    <a href="URL" class="ListaLink" title="Vezi profilul meu de Twitter." target="_blank"
-                        rel="noreferrer noopener">
+                    <a href="mailto:bogdan.muntean98@gmail.com?subject=Salutare!" class="ListaLink"
+                        title="Vezi profilul meu de Twitter." target="_blank" rel="noreferrer noopener">
                         <h2 class="ListaTitlu">📧 E-mail:</h2>
-                        <p class="ListaLink">LINK</p>
+                        <p class="ListaText" itemprop="email">bogdan.muntean1998@gmail.com</p>
                     </a>
                 </li>
             </ul>
         </main>
         <footer>
-
         </footer>
     </div>
 </body>

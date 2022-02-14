@@ -28,7 +28,7 @@ body { display: block; place-items: center; margin: 0;
     .SubTitlulPaginii { display: block; margin: 0; font-weight: 100;
     line-height: 1em; font-size: clamp(1rem, 2vw, 2rem);}
     .DescrierePrincipala { display: block; margin: 0.5em 0 1.5em; 
-    @media (mind-width: 500px) { margin-bottom: 0.5em;}
+    @media (min-width: 500px) { margin-bottom: 0.5em;}
     }
   main {  }
     .ListaLinkuri { display: block; border-top:1px solid white; 
